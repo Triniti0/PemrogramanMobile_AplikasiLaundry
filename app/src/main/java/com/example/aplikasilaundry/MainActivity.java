@@ -11,6 +11,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.aplikasilaundry.laundry.LaundryActivity;
+import com.example.aplikasilaundry.layanan.LayananActivity;
+import com.example.aplikasilaundry.pelanggan.PelangganActivity;
+import com.example.aplikasilaundry.promo.PromoActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     CardView cardLaundry, cardLayanan, cardPelanggan, cardPromo;

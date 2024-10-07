@@ -2,8 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primarycolor">#00E5FF</color>
-    <color name="secondarycolor">#84FFFF</color>
+    <color name="primarycolor">#FFC43D</color>
+    <color name="secondarycolor">#F1DEC6</color>
     <color name="setuju">#00E676</color>
     <color name="batal">#F44336</color>
+    <color name="background">#F5F5F5</color>
+
 </resources>

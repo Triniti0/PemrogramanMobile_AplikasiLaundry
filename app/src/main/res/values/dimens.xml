@@ -6,4 +6,5 @@
     <dimen name="md">10dp</dimen>
     <dimen name="lg">16dp</dimen>
     <dimen name="xl">20dp</dimen>
+    <dimen name="height_edittext"></dimen>
 </resources>

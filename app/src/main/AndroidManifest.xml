@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,22 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiLaundry"
         tools:targetApi="31">
-        <activity
-            android:name=".PromoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PelangganActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LayananActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailLaundryActivity"
-            android:exported="false" />
 
-        <activity
-            android:name=".LaundryActivity"
-            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -37,11 +25,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"/>
 
-        </activity>
+        <activity
+            android:name=".pelanggan.PelangganAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".promo.PromoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.PelangganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layanan.LayananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".laundry.DetailLaundryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".laundry.LaundryActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
