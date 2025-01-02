@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".layanan.LayananEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/lg">
+
+        <TextView
+            android:textColor="@color/primarycolor"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/lg"
+            android:textSize="23sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layanan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Layanan"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/edLayEditLayanan"
+                android:drawablePadding="@dimen/sm"
+                android:drawableLeft="@drawable/ic_username"
+                android:layout_marginTop="@dimen/sm"
+                android:padding="@dimen/md"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_edittext"
+                android:background="@drawable/edit_text_border"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/md"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/edLayEditHarga"
+                android:drawablePadding="@dimen/sm"
+                android:drawableLeft="@drawable/ic_email"
+                android:layout_marginTop="@dimen/sm"
+                android:padding="@dimen/md"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_edittext"
+                android:background="@drawable/edit_text_border"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/xl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnLayEditSimpan"
+                android:layout_marginRight="@dimen/xs"
+                android:background="@color/primarycolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan" />
+
+            <Button
+                android:id="@+id/btnLayEditHapus"
+                android:layout_marginLeft="@dimen/xs"
+                android:textColor="@color/white"
+                android:background="@color/batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hapus" />
+
+            <Button
+                android:id="@+id/btnLayEditBatal"
+                android:layout_marginLeft="@dimen/xs"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Batal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
